@@ -12,7 +12,18 @@ const vecl dely={1,1,1,0,0,-1,-1,-1};
 #define rrep(i,a,b) for(ll i=(ll)b-1; i>=(ll)a; i--)
 #define all(vec1) (vec1).begin(), (vec1).end()
 #define yn(boolean) if(boolean){cout << "Yes" << endl;}else{cout << "No" << endl;}
-
+template<typename T>
+std::istream& operator>>(std::istream& is, std::vector<T>& v) {
+    v.clear();
+    std::string line;
+    std::getline(is >> std::ws, line); // 1行丸ごと読み込み
+    std::stringstream ss(line);
+    T x;
+    while (ss >> x) {
+        v.push_back(x);
+    }
+    return is;
+}
 //あまり(負の数対応)
 template<typename T>
 T ovr(T a,T b){
