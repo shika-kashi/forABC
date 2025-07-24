@@ -11,8 +11,13 @@ const vecl dely={1,1,1,0,0,-1,-1,-1};
 #define rep(i,a,b) for(ll i=(ll)a; i<(ll)b; i++)
 #define rrep(i,a,b) for(ll i=(ll)b-1; i>=(ll)a; i--)
 #define all(vec1) (vec1).begin(), (vec1).end()
-#define debug(var) cerr << #var << " : " << var << endl;
 #define yn(boolean) if(boolean){cout << "Yes" << endl;}else{cout << "No" << endl;}
+#define debug(var) cerr << #var << " : " << var << endl;
+template<typename... Args>
+void eerr(Args&&... args){
+    ((std::cerr << args << ' '), ...) << '\n';
+}
+//入力を取るやつ
 template<typename T>
 std::istream& operator>>(std::istream& is, std::vector<T>& v) {
     v.clear();
