@@ -30,6 +30,13 @@ std::istream& operator>>(std::istream& is, std::vector<T>& v) {
     }
     return is;
 }
+//fastio
+struct FastIO {
+    FastIO() {
+        std::ios::sync_with_stdio(false);
+        std::cin.tie(nullptr);
+    }
+} fastio;
 //あまり(負の数対応)
 template<typename T>
 T ovr(T a,T b){
