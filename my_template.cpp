@@ -72,10 +72,6 @@ ll mpow(ll a , ll b , ll M){
 
 int main()
 {
-    ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-    
-    
     
     return 0;
 }
