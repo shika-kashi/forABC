@@ -1,8 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 using ll = long long;//int型は使わない
-using vecl = vector<ll>;
-using graph = vector<vector<ll>>;
+using vl = vector<ll> ; //1次元
+using vvl = vector<vl> ;//2次元
+using vvvl = vector<vvl> ;//3次元
+using vvvvl = vector<vvvl>;//4次元
+using pll = pair<ll , ll>;
+using vp = vector<pll> ; //1次
+using vvp = vector<vp> ; //2次
+using vvvp = vector<vvp> ; //3次
 using pll = pair<ll , ll>;
 const ll inf = (1LL<<61); //約2e18
 const ll MOD = 998244353;
