@@ -9,7 +9,6 @@ using pll = pair<ll , ll>;
 using vp = vector<pll> ; //1次
 using vvp = vector<vp> ; //2次
 using vvvp = vector<vvp> ; //3次
-using pll = pair<ll , ll>;
 const ll inf = (1LL<<61); //約2e18
 const ll MOD = 998244353;
 #define rep(i,a,b) for(ll i=(ll)a; i<(ll)b; i++)
