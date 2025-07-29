@@ -14,8 +14,12 @@ const ll MOD = 998244353;
 #define rep(i,a,b) for(ll i=(ll)a; i<(ll)b; i++)
 #define rrep(i,a,b) for(ll i=(ll)b-1; i>=(ll)a; i--)
 #define all(vec1) (vec1).begin(), (vec1).end()
-#define yn(boolean) if(boolean){cout << "Yes" << endl;}else{cout << "No" << endl;}
+void yn(int b , int toexit = 0) {
+    cout << (b ? "Yes" : "No") << endl;
+    if(toexit) exit(0);
+}
 #define debug(var) cerr << #var << " : " << var << endl;
+
 template<typename... Args>
 void eerr(Args&&... args){
     ((std::cerr << args << ' '), ...) << '\n';
