@@ -36,6 +36,11 @@ std::istream& operator>>(std::istream& is, std::vector<T>& v) {
     }
     return is;
 }
+//入力をそのまま取るやつ
+ll input(){
+    ll x;cin >> x;
+    return x;
+}
 //fastio
 struct FastIO {
     FastIO() {
