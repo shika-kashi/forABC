@@ -12,8 +12,6 @@ using vvvp = vector<vvp> ; //3次
 using pll = pair<ll , ll>;
 const ll inf = (1LL<<61); //約2e18
 const ll MOD = 998244353;
-const vl delx={1,0,-1,1,-1,1,0,-1};
-const vl dely={1,1,1,0,0,-1,-1,-1};
 #define rep(i,a,b) for(ll i=(ll)a; i<(ll)b; i++)
 #define rrep(i,a,b) for(ll i=(ll)b-1; i>=(ll)a; i--)
 #define all(vec1) (vec1).begin(), (vec1).end()
