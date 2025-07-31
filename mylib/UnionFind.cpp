@@ -1,7 +1,7 @@
 //UnionFind
 //使用例：https://atcoder.jp/contests/atc001/submissions/64814072
 struct UF{
-    vecl par;
+    vl par;
     UF(ll n) : par(n){
         rep(i,0,n)par[i]=-1;
     }
