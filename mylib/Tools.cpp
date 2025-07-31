@@ -1,6 +1,6 @@
-vecl make_id(const vecl&a){
+vl make_id(const vl&a){
     ll n = a.size();
-    vecl id(n) ;
+    vl id(n) ;
     rep(i,0,n)id[i] = i ;
     auto s1 = [&](ll i , ll j) -> bool{
         return a[i] < a[j] ;
