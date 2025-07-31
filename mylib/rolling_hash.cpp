@@ -1,13 +1,13 @@
 // rolling hash
 // 使用例：https://atcoder.jp/contests/abc141/submissions/66834047
-vecl Base = {1000000007 , 998244353 , 899714971 , 149500807 , 864701587 , 950722351 , 801857789 , 428889689 , 104848109} ;//必要に応じ削る
+vl Base = {1000000007 , 998244353 , 899714971 , 149500807 , 864701587 , 950722351 , 801857789 , 428889689 , 104848109} ;//必要に応じ削る
 //文字の種類、文字列の長さの最大値
 ll Char_size = 27 , hash_limit_size = 1000005;
 //数字に変換する関数
 ll ch2ll(char s){
     return ll(s - 'a') + 1;
 }
-vecl r26;graph p26;
+vl r26;graph p26;
 //init,忘れずに！
 int init_hash(){
     rep(i,0,Base.size())r26.push_back(mpow(Char_size , Base[i] - 2 , Base[i]));
@@ -20,7 +20,7 @@ int init_hash(){
     return 0;
 }
 struct Hash{
-    vecl val;
+    vl val;
     ll dig = 0;
     deque<ll> mem;
     Hash() : val(){
