@@ -10,7 +10,7 @@ struct UF{
     }
     void comb(ll x,ll y){
         if(root(x)!=root(y)){
-            par[root(x)]=y;
+            par[root(x)]=root(y);
         }
     }
 };
