@@ -25,28 +25,6 @@ const ll MOD = 998244353;
 #define yn(b,ex) if(1){if(b)cout << "Yes" << endl;else cout << "No" << endl ;if(ex)return 0;}
 #define debug(var) cerr << #var << " : " << var << endl;
 
-template<typename... Args>
-void eerr(Args&&... args){
-    ((std::cerr << args << ' '), ...) << '\n';
-}
-//入力を取るやつ
-template<typename T>
-std::istream& operator>>(std::istream& is, std::vector<T>& v) {
-    v.clear();
-    std::string line;
-    std::getline(is >> std::ws, line); // 1行丸ごと読み込み
-    std::stringstream ss(line);
-    T x;
-    while (ss >> x) {
-        v.push_back(x);
-    }
-    return is;
-}
-//入力をそのまま取るやつ
-ll input(){
-    ll x;cin >> x;
-    return x;
-}
 //fastio
 struct FastIO {
     FastIO() {
