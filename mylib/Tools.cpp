@@ -1,6 +1,6 @@
-vl make_id(const vl&a){
+vector<ll> make_id(const vector<ll>&a){
     ll n = a.size();
-    vl id(n) ;
+    vector<ll> id(n) ;
     rep(i,0,n)id[i] = i ;
     auto s1 = [&](ll i , ll j) -> bool{
         return a[i] < a[j] ;
