@@ -1,5 +1,5 @@
 //トポロジカルソート topological sort
-vl TS(graph g)
+vector<ll> TS(graph g)
 {
     ll n = g.size() ;
     set<pll>st;//入次数、id
