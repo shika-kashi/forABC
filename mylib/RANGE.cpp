@@ -8,7 +8,7 @@ struct RANGE{
         }
         it--;
         //ここでitは最も右のかぶってるのを指してる(はず)
-        set<pll> tmp;
+        set<pair<ll,ll>> tmp;
         while(true){
             if((it -> second) < l){
                 break;
@@ -18,19 +18,19 @@ struct RANGE{
             if(it == a.begin())break;
             it--;
         }
-        for(pll x : tmp){
+        for(pair<ll,ll> x : tmp){
             a.erase(x);
         }
         ll minl = l , maxr = r;
-        for(pll x : tmp){
-            chmin(minl , x.first);
-            chmax(maxr , x.second);
+        for(pair<ll,ll> x : tmp){
+            minl = min(minl , x.first) ;
+            maxr = max(maxr , x.second);
         }
         a.insert(make_pair(minl , maxr));
         return tmp.size();
     }
     ll printall(){
-        for(pll x : a){
+        for(pair<ll,ll> x : a){
             cout << x.first << ' ' << x.second << endl;
         }
         cout << "end" << endl << endl;
