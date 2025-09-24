@@ -1,5 +1,5 @@
 struct RANGE{
-    set<pll> a;
+    set<pair<ll,ll>> a;
     ll add(ll l , ll r){
         auto it = a.lower_bound(make_pair(r+1 , -1));
         if(it == a.begin()){
