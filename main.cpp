@@ -38,7 +38,7 @@ using vvvvvs = vector<vvvvs>;//5D
 using vvvvvvs = vector<vvvvvs>;//6D
 using vvvvvvvs = vector<vvvvvvs>;//7D
 [[maybe_unused]] const ll INF = 2e18 ;
-const ll MOD = 998244353;
+[[maybe_unused]] const ll MOD = 998244353;
 #define rep(i,a,b) for(ll i=(ll)a; i<(ll)b; i++)
 #define rrep(i,a,b) for(ll i=(ll)b-1; i>=(ll)a; i--)
 #define all(vec1) (vec1).begin(), (vec1).end()
