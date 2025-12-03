@@ -7,7 +7,7 @@ ll Char_size = 27 , hash_limit_size = 1000005;
 ll ch2ll(char s){
     return ll(s - 'a') + 1;
 }
-vl r26;graph p26;
+vl r26;vvl p26;
 //init,忘れずに！
 int init_hash(){
     rep(i,0,Base.size())r26.push_back(mpow(Char_size , Base[i] - 2 , Base[i]));
